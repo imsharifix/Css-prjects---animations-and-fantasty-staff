@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.media{
+    width: 50rem;
+    height: 5rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+.icon-box{
+    margin: 1rem auto;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s; 
+    overflow: hidden;
+    border-radius: 100%;
+}
+.icon-box .fa{
+    font-size: 2rem;
+    color: white;
+    line-height: 50px;
+    z-index: 999;
+}
+.icon-box::before , .icon-box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.icon-box:hover{
+    transform: scale(1.1);
+}
+
+/* instagram */
+.instagram::after{
+    content: '';
+    box-shadow: 0px 0px 10px 0px purple inset;
+    width: 100%;
+    height: 100%;
+}
+.instagram::before{
+    box-shadow: 0px 0px 0px 30px #c948c9e8 inset;
+    transform: translateX(4rem);
+    z-index: -5;
+}
+.instagram:hover::before{
+    transform: translateX(0);
+}
+
+/* google */
+
+.google::after{
+    content: '';
+    box-shadow: 0px 0px 5px 0px #d65e02f9 inset;
+    width: 100%;
+    height: 100%;
+}
+.google::before{
+    content: '';
+    box-shadow: 0px 0px 0px 0px #ac940a inset ,0px 0px 0px 0px #ac940a inset;
+    z-index: -5;
+    border-radius: 0;
+}
+.google:hover::before{
+    box-shadow: 0px -30px 0px 0px #ac940a inset ,0px 30px 0px 0px #ac940a inset;
+}
+/* whatsapp */
+
+.whatsapp::after{
+    content: '';
+    box-shadow: 0px 0px 5px 0px #16a300f9 inset;
+    width: 100%;
+    height: 100%;
+}
+.whatsapp:hover::before{
+    box-shadow: 0px 0px 0px 30px #22c710b5 inset ,0px 0px 0px 30px #22c710b5 inset;
+    z-index: -5;
+}
+
+/* telegram */
+
+.telegram::after{
+    content: '';
+    box-shadow: 0px 0px 5px 0px #06a8a8f9 inset;
+    width: 100%;
+    height: 100%;
+}
+.telegram::before{
+    content: '';
+    box-shadow: 0px 0px 5px 30px black inset;
+    z-index: -5;
+}
+.telegram:hover::before{
+   background-color: #06a8a8f9;
+   box-shadow: 0px 0px 0px 0px black inset;
+}

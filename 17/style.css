@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto;
+    width: 50%;
+    height: 4rem;
+}
+
+.box .fa{
+    background-color: #0ca1db;
+    color: #282626;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#share{
+    width: 5rem;
+    height: 5rem;
+    z-index: 999;
+}
+
+#telegram , #instagram , #whatsapp , #reddit{
+    top: 165px;
+    left: 85px;
+}
+#share:hover ~ #telegram{
+    animation: telegram 1s forwards;
+    animation-delay: 0.1s;
+}
+#telegram{
+    animation: telegramout 1s forwards;
+    
+}
+#instagram{
+    animation: instagramout 1s forwards;
+}
+#whatsapp{
+    animation: whatsappout 1s forwards;
+}
+#reddit{
+    animation: redditout 1s forwards;
+}
+@keyframes telegram{
+    0%{
+        top: 155px;
+        left: 85px;
+    }
+    100%{
+        top: 5rem;
+        left: 9rem;
+    }
+}
+@keyframes telegramout{
+    100%{
+        top: 155px;
+        left: 85px;
+    }
+    0%{
+        top: 5rem;
+        left: 9rem;
+    }
+}
+#share:hover ~ #instagram{
+    animation: instagram 1s forwards;
+    animation-delay: 0.2s;
+}
+@keyframes instagram{
+    0%{
+        top: 155px;
+        left: 85px;
+    }
+    100%{
+        top: 6.5rem;
+        left: 12.9rem;
+    }
+}
+@keyframes instagramout{
+    100%{
+        top: 155px;
+        left: 85px;
+    }
+    0%{
+        top: 6.5rem;
+        left: 12.9rem;
+    }
+}
+#share:hover ~ #whatsapp{
+    animation: whatsapp 1s forwards;
+    animation-delay: 0.3s;
+}
+@keyframes whatsapp{
+    0%{
+        top: 155px;
+        left: 85px;
+    }
+    100%{
+        top: 10rem;
+        left: 14.5rem;
+    }
+}
+@keyframes whatsappout{
+    100%{
+        top: 155px;
+        left: 85px;
+    }
+    0%{
+        top: 10rem;
+        left: 14.5rem;
+    }
+}
+#share:hover ~ #reddit{
+    animation: reddit 1s forwards;
+    animation-delay: 0.4s;
+}
+@keyframes reddit{
+    0%{
+        top: 155px;
+        left: 85px;
+    }
+    100%{
+        top: 13.5rem;
+        left: 13rem;
+    }
+}
+@keyframes redditout{
+    100%{
+        top: 155px;
+        left: 85px;
+    }
+    0%{
+        top: 13.5rem;
+        left: 13rem;
+    }
+}

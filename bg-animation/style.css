@@ -1,0 +1,49 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;    
+    background-color: #3a8484;
+    height: 90vh;
+    width: 55rem;
+}
+.bg div{
+    width: 10px;
+    height: 10px;
+    color: black;
+    border: 2px solid black;
+    position: absolute;
+    animation: anime 5s infinite;
+}
+
+.bg div:nth-child(1){
+    top: 20rem;
+    left: 5rem;
+    animation-delay: 1s;
+}
+.bg div:nth-child(2){
+    top: 6rem;
+    left: 70%;
+    animation-delay: 2s;
+}
+.bg div:nth-child(3){
+    top: 85%;
+    left: 30%;
+    animation-delay: 3s;
+}
+.bg div:nth-child(4){
+    top: 65%;
+    left: 95%;
+    animation-delay: 4s;
+}
+
+@keyframes anime{
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        transform: rotate(360deg) scale(14);
+        opacity: 0;
+    }
+}

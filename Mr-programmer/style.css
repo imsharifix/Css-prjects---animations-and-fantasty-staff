@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin-top: 5rem;
+}
+#bokhar1{
+    animation: bokhar1 1s infinite alternate;
+}
+#bokhar2{
+    animation: bokhar2 1s ease-out infinite alternate;
+}
+@keyframes bokhar1{
+    0%{
+        transform: translate();
+    }
+    100%{
+        transform: translateY(0.5rem);
+    }
+}
+@keyframes bokhar2{
+    100%{
+        transform: translate();
+    }
+    0%{
+        transform: translateY(0.5rem);
+    }
+}

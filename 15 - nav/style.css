@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background: url(images/Nature.jpg);
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    color: white;
+    height: 3rem;
+    margin: 3rem auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu__items{
+    background-color: black;
+    width: 10rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    list-style-type: none;
+}
+.menu__items:hover{
+    background-color: #108e1082;
+}
+.menu__items:hover > ul{
+    display: block;
+    transition: all 0.3s;
+}
+.figma-menu{
+    position: absolute;
+    top: 0;
+    left: 10rem;
+}
+.figma-menu__sub{
+    position: absolute;
+    top: 0;
+    left: 10rem;
+}
+.desine-menu,
+.figma-menu,
+.figma-menu__sub{
+    display: none;
+}
+.desine-menu{
+    list-style-type: none;
+}
+.figma-menu{
+    list-style-type: none;
+}

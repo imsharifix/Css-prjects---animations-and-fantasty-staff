@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1B1A17;
+}
+
+.btn{
+    padding: 3rem;
+    margin: 5rem 5rem;
+    border: 2px solid #2fde2f;
+    background-color: #2fde2f;
+    color: blue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #F0A500;
+    border: 2px solid #F0A500;
+    box-shadow: 2px 2px 10px 3px #F0A500 inset,2px 2px 10px 3px #F0A500;
+    text-shadow: 3px 3px 3px #F0A500;
+    animation: cheshmakzan 2s infinite;
+}
+
+@keyframes cheshmakzan {
+    0%{ 
+        color: transparent;
+        text-shadow: none;
+    }
+    50%{
+        color: transparent;
+        text-shadow: none;
+    }
+    60%{
+        color: #F0A500;
+        text-shadow: 3px 3px 3px #F0A500;
+    }
+    70%{
+        color: transparent;
+        text-shadow: none;
+    }
+    80%{
+        color: #F0A500;
+        text-shadow: 3px 3px 3px #F0A500;
+    }
+    85%{
+        color: #F0A500;
+        text-shadow: 3px 3px 3px #F0A500;
+    }
+    86%{
+        color: transparent;
+        text-shadow: none;
+    }
+    100%{
+        color: #F0A500;
+        text-shadow: 3px 3px 3px #F0A500;
+    }
+}
+
+.btn2{
+    padding: 3rem;
+    margin: 5rem 5rem;
+    border: 2px solid #537FE7;
+    background-color: black;
+    color: #537FE7;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 1s;
+    background-image: linear-gradient(130deg,#537FE7 40%, transparent 50%);
+    background-position: 100%;
+    background-size: 320%;
+}
+.btn2:hover{
+    color: black;
+    background-position: 0;
+}
+
+.btn3{
+    margin: 5rem 5rem;
+    background: #222;
+    color: white;
+    padding: 5rem;
+    border: none;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}

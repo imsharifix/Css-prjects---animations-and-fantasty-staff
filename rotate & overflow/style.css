@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rotate{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    border-radius: 1rem;
+    margin: 2rem 2rem;
+    box-shadow: 2px 2px 10px 2px black;
+    transition: 1s;
+    overflow: hidden;
+    perspective: 200px;
+}
+
+.rotate:hover{
+    transform: rotateX(180deg) rotateY(0);
+}
+
+.picture{
+    margin: 5rem 5rem;
+    background: url(1.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    width: 15rem;
+    height: 6rem;
+    font-weight: Bold;
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.pic{
+    width: 22rem;
+    height: 22rem;
+    margin: 5rem 5rem;
+}
+
+
+.pic img{
+    width: 12rem;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    transform: skew(-3deg);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.pic:hover img:nth-child(1){
+    transform: translateX(30px) translateY(-30px) skew(-3deg);
+    opacity: 0.4;
+}
+.pic:hover img:nth-child(2){
+    transform: translateX(60px) translateY(-60px) skew(-3deg);
+    opacity: 0.6;
+}
+.pic:hover img:nth-child(3){
+    transform: translateX(90px) translateY(-90px) skew(-3deg);
+    opacity: 0.8;
+}
+.pic:hover img:nth-child(4){
+    transform: translateX(120px) translateY(-120px) skew(-3deg);
+    opacity: 1;
+}
+
+.pic2{
+    margin: 5rem 5rem;
+    width: 20rem;
+    height: 22rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.pic2__img:hover{
+    transform: scale(1.5) rotate(-20deg);
+}
+.pic2__img{
+    width: 100%;
+    height: 100%;
+    transform: scale(0deg) rotate(0);
+    transition: all 0.7s;
+}
+.container{
+    background-color: #0000006f;
+    transition: all 0.7s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    transform: translateY(0px);
+}
+.pic2:hover .container{
+    transform: translateY(-83px);
+}

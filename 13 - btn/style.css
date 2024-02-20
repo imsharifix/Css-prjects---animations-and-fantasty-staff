@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.music{
+    margin: 3rem 3rem;
+    width: 20rem;
+    height: 10rem;
+    transform: rotate(-90deg);
+}
+.base{
+    width: 1.5rem;
+    border-radius: 1rem;
+    height: 1.5rem;
+    background-color: #00c8ff;
+    margin: 2rem 0;
+    box-shadow: 0px 0px 5px #00c8ff,0px 0px 25px #2d6f8b,0px 0px 35px #2d6f8b,0px 0px 45px #2d6f8b;
+}
+.base-1{
+    animation: base-1 2s alternate infinite;
+}
+.base-2{
+    animation: base-2 2s alternate infinite;
+}
+.base-3{
+    animation: base-3 1s alternate infinite;
+}
+.base-4{
+    animation: base-4 2s alternate infinite;
+}
+.base-5{
+    animation: base-5 2s alternate infinite;
+}
+@keyframes base-1{
+    0%{
+        width: 0;
+    }
+    20%{
+        width: 3rem;
+    }
+    80%{
+        width: 8rem;
+    }
+    90%{
+        width: 2rem;
+    }
+    100%{
+        width: 7rem;
+    }
+}
+@keyframes base-2{
+    0%{
+        width: 0;
+    }
+    75%{
+        width: 3rem;
+    }
+    90%{
+        width: 10rem;
+    }
+    100%{
+        width: 15rem;
+    }
+}
+@keyframes base-3{
+    0%{
+        width: 0;
+    }
+    20%{
+        width: 15rem;
+    }
+    50%{
+        width: 10rem;
+    }
+    90%{
+        width: 15rem;
+    }
+    100%{
+        width: 16rem;
+    }
+}
+@keyframes base-4{
+    0%{
+        width: 0;
+    }
+    20%{
+        width: 3rem;
+    }
+    80%{
+        width: 4rem;
+    }
+    90%{
+        width: 2rem;
+    }
+    100%{
+        width: 5rem;
+    }
+}
+@keyframes base-5{
+    0%{
+        width: 0;
+    }
+    90%{
+        width: 8rem;
+    }
+    100%{
+        width: 7rem;
+    }
+}
